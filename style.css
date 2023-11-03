@@ -10,6 +10,7 @@ h2 {
 }
 .container {
 	width: 371px;
+  text-decoration: none;
 }
 h3 {
   font-family: "Anonymous Pro", sans-serif;
@@ -90,6 +91,7 @@ footer{
     display: flex;
     gap: 25px;
     align-items: center;
+    flex-grow: 1;
   }
   .container__div{
     width: 322px;
@@ -156,4 +158,67 @@ margin-top:20px ;
  margin-top:30px;
  max-width:300px ;
 
+}
+body{
+  margin: 0;
+}
+.card-image{
+ width: 90%;
+  margin: 48px 48px 32px 48px;
+
+}
+.card-container{
+  background: rgb(255, 255, 255);
+  margin: 30px 0;
+  padding: 30px 10px;
+  border-radius: 50px;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-family:"Anonymous Pro";
+}
+.info {
+  display: flex;
+}
+
+.col1 {
+  width: 40%;
+  padding-right: 20px;
+  margin-top: 16px;
+  margin-right: 48px;
+}
+
+.col2 {
+  width: 60%;
+  font-family: "Anonymous Pro";
+font-size: 20px;
+font-weight: 400;
+margin-left: 48px;
+
+}
+.wrapper{
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.info{
+gap: 32px;
+}
+.col1 h3{
+margin: 0;
+margin-left: 0;
+}
+.info hr{
+margin: 24px 0;
+background-color: #121723;
+}
+
+.card-container h2{
+  margin-left: 48px;
+}
+.subtitle_sneaker{
+  margin-left: 48px;
 }
