@@ -11,6 +11,8 @@ h2 {
 .container {
 	width: 371px;
   text-decoration: none;
+  transition: 0.4s ease-in-out;
+  border-radius: 12px;
 }
 h3 {
   font-family: "Anonymous Pro", sans-serif;
@@ -42,6 +44,9 @@ img {
 }
 header{
 border-bottom: 2px solid #A1A6B4;
+display: flex;
+align-items: center;
+justify-content: space-between;
 }
 .menu{
   color: black;
@@ -55,8 +60,6 @@ text-decoration: none;
 font-family:"Anonymous Pro", sans-serif;
 }
 .social{
-  display: grid;
-  justify-items: end;
   margin-right: 157px;
 }
 .title2{
@@ -69,8 +72,6 @@ footer{
   height: 142px;
   padding: 0px 140px 10px 140px;
   padding-top:20px;
-  justify-content: space-around;
-  align-items: center;
   background: var(--black, #121723);
   
 }
@@ -94,7 +95,7 @@ footer{
     flex-grow: 1;
   }
   .container__div{
-    width: 322px;
+    width: 321.5px;
     padding: 32px 24px;
     align-items: center;
     gap: 10px;
@@ -107,24 +108,23 @@ footer{
     flex-wrap: wrap;
     gap: 24px;
     justify-content: center;
-    margin: 0 auto;
+    margin:  auto;
     width: 1161px;
   }
   .sneaker2023{
-    display: inline-block;
-    position: absolute;
-    left: 50%;
+    display: flex;
     color: var(--text_gray, #a1a6b4);
     font-family: "Anonymous Pro";
     font-size: 16px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    
   }
 .subtitle{  
   color: #121723;
   font-family: "Anonymous Pro";
-  font-size: 48px;
   font-style: normal;
   font-weight: 700;
   line-height: 100%;
@@ -138,7 +138,6 @@ hr {
   border: 1px solid #E6E8EC66;
 }
 .footer_title{
-display: grid;
 justify-items: start;
 height:1px;
 width:1px ;
@@ -151,9 +150,6 @@ margin-top:20px ;
  margin-bottom: 10px;
 }
 .header_title{
-  display: grid;
-  justify-items: start;
- height:20px ;
  margin-left: 142px;
  margin-top:30px;
  max-width:300px ;
@@ -164,7 +160,9 @@ body{
 }
 .card-image{
  width: 90%;
-  margin: 48px 48px 32px 48px;
+ margin-left: auto;
+    margin-right: auto;
+    display: block;
 
 }
 .card-container{
@@ -173,11 +171,29 @@ body{
   padding: 30px 10px;
   border-radius: 50px;
 }
-.row {
+.row1 {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
     font-family:"Anonymous Pro";
+}
+.row2 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-family:"Anonymous Pro";
+}
+.row3 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-family:"Anonymous Pro";
+}
+.row4 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-family:"Anonymous Pro";
 }
 .info {
   display: flex;
@@ -187,7 +203,7 @@ body{
   width: 40%;
   padding-right: 20px;
   margin-top: 16px;
-  margin-right: 48px;
+  margin-right: 24px;
 }
 
 .col2 {
@@ -195,7 +211,7 @@ body{
   font-family: "Anonymous Pro";
 font-size: 20px;
 font-weight: 400;
-margin-left: 48px;
+margin-left: 24px;
 
 }
 .wrapper{
@@ -217,8 +233,139 @@ background-color: #121723;
 }
 
 .card-container h2{
-  margin-left: 48px;
+  margin-left: 24px;
 }
 .subtitle_sneaker{
-  margin-left: 48px;
+  margin-left: 24px;
+  width: auto;
 }
+.container__image{
+  border-top-right-radius:12px ;
+  border-top-left-radius:12px ;
+}
+ .container:hover{
+transform: translateY(-20px);
+
+}
+.container:hover .container__div {
+  box-shadow:0 10px 10px 0 rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 500px) {
+  .header_title{
+    align-items: center;
+    display: flex;
+    margin-right: 133px;
+    }
+    header{
+      flex-direction: column;
+      align-items: center;
+    }
+  .social{
+   margin: auto;
+    display: flex;
+  }
+
+  .menu{
+    row-gap: 1px;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  .subtitle{
+  font-size: 40px;
+  margin-bottom: 1px;
+  }
+  .footer_title{
+    display: flex;
+    align-items: center;
+    margin-left:-95px ;
+  }
+  .social1{
+    display: flex;
+    margin: auto;
+    width: 280px;
+    margin: 15px 0px 10px 0px;
+    position: absolute;
+    left: 30px;
+  
+  }
+  
+  .menu1{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+  }
+  hr{
+  width:300px;
+  margin-left: -100px;
+  margin: 50px 0px 0px -100px;
+  }
+  .sneaker2023{
+  position: absolute;
+  left: 104px;
+  
+  
+  }
+  .cards{
+    align-items: center;
+  }
+  
+  
+  .info{
+    flex-direction: column;
+    
+  }
+  
+  .card-image{
+  margin:0px 0px 0px 20px ;
+  
+  }
+  .wrapper{
+  width: 340px;
+  
+  }
+  .col1{
+    display: flex;
+    flex-wrap: wrap;
+  min-width: 300px;
+  max-width:300px ;
+  margin-left: 24px;
+  }
+  .row1{
+    gap: 90px;
+  }
+  .row2{
+    gap: 115px;
+  }
+  .row3{
+    gap: 35px;
+  }
+  .row4{
+    gap: 67px;
+  }
+  .col2{
+    min-width:300px;
+    margin: 0
+  }
+  .card-container h2{
+    font-size: 35px;
+  }
+  .card-container h3{
+    font-size: 22px;
+    margin: 0px 24px 0px 24px;
+  }
+  .card-container p{
+    margin: 24px 24px 0px 24px; 
+  }
+  .container__image{
+    width: 92%;
+    margin: 16px;
+    margin-bottom: 0;
+  }
+ .container__div{
+  margin: 16px;
+  width: 79%;
+  margin-top: -10px;
+ }
+  }
